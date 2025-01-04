@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="styles.css">
+<script src="script.js"></script>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funérailles Spatiales - Éternité dans l'Espace</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>Funérailles Spatiales</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Accueil</a></li>
+                    <li><a href="#capsules">Nos Capsules</a></li>
+                    <li><a href="#cemetery">Cimetière Spatial</a></li>
+                    <li><a href="#services">Nos Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <h2>Un Repos Éternel dans l'Infini</h2>
+            <p>Découvrez une nouvelle manière de célébrer la mémoire de vos proches dans l'immensité de l'espace.</p>
+            <a href="#capsules" class="btn">Explorez Nos Capsules</a>
+        </div>
+    </section>
+
+    <section id="capsules" class="capsules">
+        <div class="container">
+            <h2>Nos Capsules Funéraires</h2>
+            <p>Choisissez parmi une variété de designs adaptés à vos besoins.</p>
+            <div class="capsule-gallery">
+                <div class="capsule">
+                    <img src="images/capsule1.jpg" alt="Capsule Cylindrique">
+                    <h3>Capsule Cylindrique</h3>
+                    <p>Design classique et robuste. Dimensions : 30 cm x 90 cm.</p>
+                </div>
+                <div class="capsule">
+                    <img src="images/capsule2.jpg" alt="Capsule Sphérique">
+                    <h3>Capsule Sphérique</h3>
+                    <p>Symbolique et élégante. Diamètre : 50 cm.</p>
+                </div>
+                <div class="capsule">
+                    <img src="images/capsule3.jpg" alt="Capsule Hexagonale">
+                    <h3>Capsule Hexagonale</h3>
+                    <p>Pour des structures imbriquées uniques. Dimensions : 40 cm x 40 cm.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="cemetery" class="cemetery">
+        <div class="container">
+            <h2>Le Cimetière Spatial</h2>
+            <p>Découvrez une structure géostationnaire qui perpétue la mémoire des êtres chers.</p>
+            <img src="images/cemetery.jpg" alt="Cimetière Spatial" class="cemetery-image">
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Nos Services</h2>
+            <ul>
+                <li>Transport des capsules vers l'orbite géostationnaire.</li>
+                <li>Personnalisation complète des designs.</li>
+                <li>Suivi en temps réel de la localisation de votre capsule.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contactez-Nous</h2>
+            <p>Pour toute question ou réservation, veuillez nous écrire.</p>
+            <form action="submit_form.php" method="post">
+                <label for="name">Nom :</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message :</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Envoyer</button>
+            </form>
+        </div>
+    </section>
+
+    
+
+    <script src="script.js"></script>
+</body>
+<nav>
+  <ul>
+    <li><a href="index.html">Accueil</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<footer>
+  <p>&copy; 2024 Cimetière Spatial. Tous droits réservés.</p>
+  <p>Contactez-nous : contact@cimetierespatial.com</p>
+</footer>
+
+</html>
