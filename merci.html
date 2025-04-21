@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roma Gloria - Merci</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+    <div class="nav-container">
+        <h1>Réseau Social Immersif sur Rome Antique</h1>
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="À-propos.html">À propos</a></li>
+            <li><a href="Fonctionnalités.html">Fonctionnalités</a></li>
+            <li><a href="Financement.html">Financement</a></li>
+            <li><a href="Investir.html">Investir</a></li>
+            <li><a href="Compétences-et-Devis.html">Compétences et Devis</a></li>
+            <li><a href="Récompenses.html">Récompenses</a></li>
+            <li><a href="categories.html">Gategories</a></li>
+            <li><a href="contact.html">contact</a></li>
+
+
+        </ul>
+    </div>
+</nav>
+
+    <!-- Section Remerciement -->
+    <section class="section thank-you">
+        <div class="parchment">
+            <canvas class="parchment-particles"></canvas>
+            <div class="parchment-border"></div>
+            <div class="parchment-content">
+                <h2>Gratias Tibi Agimus</h2>
+                <p id="thank-you-message">Merci pour votre contribution de <span id="amount"></span>€. Vous êtes désormais un <span id="privilege"></span> de l'Empire. Votre soutien forge la grandeur de Roma Gloria.</p>
+                <a href="index.html" class="cta-button">Retour à l'Accueil</a>
+            </div>
+            <!-- <audio class="parchment-sound" src="parchment-sound.mp3"></audio> -->
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+    <script>
+        // Récupérer les paramètres d'URL pour afficher le message personnalisé
+        const urlParams = new URLSearchParams(window.location.search);
+        const amount = urlParams.get('amount');
+        const privilege = urlParams.get('privilege');
+        if (amount && privilege) {
+            document.getElementById('amount').textContent = amount;
+            document.getElementById('privilege').textContent = privilege;
+        }
+    </script>
+</body>
+</html>

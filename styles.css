@@ -1,0 +1,131 @@
+/* Police */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap');
+
+/* Configuration de base du body */
+* {
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+}
+
+html, body {
+    height: 100%; 
+}
+
+body {
+    font-family: 'Cinzel', serif; 
+    background-color: #222; 
+    color: #FFD700; 
+    position: relative; 
+}
+
+/* Navigation */
+nav {
+    background-color: rgba(0, 0, 0, 0.8); 
+    padding: 15px 30px;
+    border-bottom: 2px solid #FFD700; 
+}
+
+nav .nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h1 {
+    font-size: 2.5rem; 
+    color: #FFD700; 
+    margin: 0; 
+}
+
+nav ul {
+    list-style: none; 
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 15px; 
+}
+
+nav ul li a {
+    color: #FFD700; 
+    text-decoration: none; 
+    padding: 6px 10px; 
+    transition: all 0.3s; 
+}
+
+nav ul li a:hover {
+    border: 1px solid #FFD700; 
+    background-color: rgba(255, 215, 0, 0.1); 
+    border-radius: 5px; 
+}
+
+/* Styles pour le formulaire de contact */
+form {
+    background: rgba(34, 34, 34, 0.9); 
+    padding: 20px;
+    border-radius: 10px; 
+    max-width: 500px; /* Largeur maximale du formulaire */
+    margin: 20px auto; 
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #FFD700; 
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: calc(100% - 20px); 
+    padding: 10px; 
+    margin-bottom: 15px; 
+    border: 1px solid #FFD700; 
+    border-radius: 5px; 
+    background-color: rgba(0, 0, 0, 0.7); 
+    color: #FFD700; 
+}
+
+textarea {
+    height: 120px; /* Hauteur fixée pour le textarea */
+}
+
+/* Styles des boutons */
+button {
+    background-color: #FFD700; 
+    color: #000; 
+    border: none;
+    padding: 10px; 
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    width: 100%; 
+    max-width: 300px; 
+    margin: 10px auto; 
+}
+
+button:hover {
+    background-color: #DAA520; 
+}
+
+/* Styles des sections */
+section {
+    padding: 50px 20px; 
+    text-align: center; 
+}
+
+/* Styles des titres */
+h2 {
+    color: #FFD700; 
+    margin-bottom: 20px; 
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8); 
+    color: #FFD700; 
+    font-size: 1rem;
+    margin-top: 40px; 
+    border-top: 2px solid #FFD700; 
+}

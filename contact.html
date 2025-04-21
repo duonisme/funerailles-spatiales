@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Réseau Social Immersif</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Menu déroulant de traduction -->
+<div style="position: fixed; top: 10px; right: 10px; z-index: 9999;">
+    <select onchange="translatePage(this.value)">
+        <option value="">🌍 Traduire le site</option>
+        <option value="fr|en">English</option>
+        <option value="fr|de">Deutsch</option>
+        <option value="fr|it">Italiano</option>
+        <option value="fr|es">Español</option>
+        <option value="fr|ar">العربية</option>
+        <option value="fr|ru">Русский</option>
+        <option value="fr|zh-CN">中文</option>
+    </select>
+</div>
+
+<iframe id="google_translate_iframe" style="display:none;"></iframe>
+
+<script>
+    function translatePage(langPair) {
+        if (!langPair) return;
+        var iframe = document.getElementById('google_translate_iframe');
+        var page = window.location.href;
+        iframe.src = "https://translate.google.com/translate?hl=&sl=" + langPair.split('|')[0] + "&tl=" + langPair.split('|')[1] + "&u=" + encodeURIComponent(page);
+        iframe.onload = function () {
+            location.href = iframe.src;
+        };
+    }
+</script>
+
+ <nav>
+    <div class="nav-container">
+        <h1>Réseau Social Immersif sur Rome Antique</h1>
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="À-propos.html">À propos</a></li>
+            <li><a href="Fonctionnalités.html">Fonctionnalités</a></li>
+            <li><a href="Financement.html">Financement</a></li>
+            <li><a href="Investir.html">Investir</a></li>
+            <li><a href="Compétences-et-Devis.html">Compétences et Devis</a></li>
+            <li><a href="Récompenses.html">Récompenses</a></li>
+            <li><a href="categories.html">Gategories</a></li>
+            <li><a href="contact.html">contact</a></li>
+
+
+        </ul>
+    </div>
+</nav>
+
+<section class="content-section">
+    <h2>Nous aimerions avoir de vos nouvelles !</h2>
+    <form action="submit_form.php" method="POST">
+        <label for="name">Nom :</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email :</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message :</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button type="submit">Envoyer</button>
+    </form>
+</section>
+
+<footer>
+    <p>© 2024 - 2030 Roma Gloria. Tous droits réservés.</p>
+</footer>
+
+</body>
+</html>
